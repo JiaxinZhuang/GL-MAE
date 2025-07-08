@@ -16,10 +16,10 @@ Masked Autoencoder (MAE) is a self-supervised pre-training technique that holds 
 
 ## Usage
 ---
-## Load the pretrained weights.
+### Load the pretrained weights.
 todo: add the pretrained weights and instructions.
 
-## 0. Requirements
+### 0. Requirements
 * Python 3.8+
 * PyTorch 2.0.1
 * MONAI 1.0.0
@@ -27,7 +27,7 @@ todo: add the pretrained weights and instructions.
 * cuDNN 8.5
 * NVIDIA GPU with compute capability 8.6
 
-## 1. Datasets
+### 1. Datasets
 Firstly, you need to prepare the pre-training dataset, the ~1k dataset are all open-source and you can download by yourself, or from [huggingface](https://huggingface.co/datasets/Luffy503/VoCo-10k) (Credit to Dr. [Linshan Wu](https://scholar.google.com/citations?hl=en&user=RGPzB4sAAAAJ&inst=1381320739207392350)).
 ![](./assets/datasets.png).
 ```
@@ -42,19 +42,20 @@ The project contains two directories, _i.e.,_
 2) Finetune
 
 
-# 2. Pretrain
+### 2. Pretrain
 Wait to update...
 
-# 3. Finetune
+### 3. Finetune
 Wait to update...
 
 ## Reference
 If you find this repo useful for your research, please consider citing the paper as follows:
 ```
-@article{zhuang2023advancing,
+@article{glmae,
   title={Advancing volumetric medical image segmentation via global-local masked autoencoder},
   author={Zhuang, Jia-Xin and Luo, Luyang and Chen, Hao},
   journal={IEEE Transactions on Medical Imaging},
   year={2025}
+  publisher={IEEE}
 }
 ```
