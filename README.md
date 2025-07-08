@@ -53,7 +53,7 @@ If you find this repo useful for your research, please consider citing the paper
 ```
 @article{glmae,
   title={Advancing volumetric medical image segmentation via global-local masked autoencoder},
-  author={Zhuang, Jia-Xin and Luo, Luyang and Chen, Hao},
+  author={Zhuang, Jiaxin and Luo, Luyang and Wang, Qiong and Wu, Mingxiang and Luo, Lin and Chen, Hao},
   journal={IEEE Transactions on Medical Imaging},
   year={2025}
   publisher={IEEE}
