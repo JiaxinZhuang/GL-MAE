@@ -5,6 +5,7 @@ Official codebase for TMI paper: Advancing volumetric medical image segmentation
 [![arXiv](https://img.shields.io/badge/arXiv-2306.08913-b31b1b.svg)](https://arxiv.org/pdf/2306.08913) [![IEEE](https://img.shields.io/badge/IEEE-11004165-00629B)](https://ieeexplore.ieee.org/document/11004165)
 
 ## News
+* [25/09] Update the checkpoint, stay tuned.
 * [25/07] Stay tuned, we would update the codebase as soon as possible.
 * [25/07] Intialize the readme.
 * [25/06] This paper is accepted by TMI.
@@ -43,7 +44,7 @@ The project contains two directories, _i.e.,_
 
 
 ### 2. Pretrain
-Wait to update...
+You can obtain the pretrained weights from [Onedrive](https://hkustconnect-my.sharepoint.com/:f:/g/personal/jzhuangad_connect_ust_hk/EjlzFJ2hHmhNgx9vjGudxDMBm5dKm9BKO0U6RnX-vUEQ5A?e=QGvMaf).
 
 ### 3. Finetune
 Wait to update...
