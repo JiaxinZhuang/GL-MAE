@@ -46,6 +46,44 @@ The project contains two directories, _i.e.,_
 ### 2. Pretrain
 You can obtain the pretrained weights from [Onedrive](https://hkustconnect-my.sharepoint.com/:f:/g/personal/jzhuangad_connect_ust_hk/EjlzFJ2hHmhNgx9vjGudxDMBm5dKm9BKO0U6RnX-vUEQ5A?e=QGvMaf).
 
+You can use the following command to load our pretrained weights for the stand vit3d model:
+
+```python
+
+import torch
+import argparse
+
+from models_3dvit import vit_base_patch16_3d # This file is inside Finetune direcotry.
+
+parser = argparse.ArgumentParser(description="GL-MAE 3D Vision Transformer")
+parser.add_argument("--img_size", default=96, type=int, help="input image size")
+parser.add_argument("--patch_size", default=16, type=int, help="patch size")
+parser.add_argument("--in_channels", default=1, type=int, help="number of input channels")
+parser.add_argument("--embed_dim", default=768, type=int, help="embedding dimension")
+parser.add_argument("--encoder_only", default=True, type=bool, help="use encoder only")
+parser.add_argument("--pretrained_checkpoint", default='/Path/to/checkpoint-1599.pth',
+                    type=str, help="path to pretrained checkpoint")
+args = parser.parse_args()
+
+# Create GL-MAE model
+model = vit_base_patch16_3d(
+    img_size=(args.img_size, args.img_size, args.img_size),
+    patch_size=args.patch_size,
+    in_chans=args.in_channels,
+    embed_dim=args.embed_dim,
+    encoder_only=args.encoder_only
+)
+
+# Load pretrained checkpoint
+missing_keys, unexpected_keys = model.load_pretrained_checkpoint(
+    args.pretrained_checkpoint,
+    encoder_only=args.encoder_only,
+    interpolate_pos_embed=True
+)
+
+print("Using pretrained GL-MAE self-supervised 3D Vision Transformer backbone weights!")
+```
+
 ### 3. Finetune
 Wait to update...
 
