@@ -1,2 +1,23 @@
 __pycache__/
 *.py[cod]
+
+# local / runtime
+*.log
+cufile.log
+.ipynb_checkpoints/
+__pycache__/
+*.py[cod]
+*.so
+.DS_Store
+.vscode/
+.idea/
+runs/
+output_dir/
+ckpts/
+*.pth
+*.pt
+*.ckpt
+
+# env
+.venv/
+venv/
